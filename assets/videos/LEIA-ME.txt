@@ -1,0 +1,11 @@
+COLOQUE AQUI OS VÍDEOS DO SITE
+==============================
+
+  video-01.mp4  Bastidores
+  video-02.mp4  Detalhes dos chaveiros
+  video-03.mp4  Novidades
+
+Formato: MP4 (H.264 + AAC), vertical 4:5 (ex.: 720x900), até ~8 MB cada.
+As capas (poster) usam foto-01.jpg, foto-02.jpg e foto-03.jpg da pasta assets/fotos.
+
+Enquanto um vídeo não existir, o site mostra um placeholder com o caminho correto.

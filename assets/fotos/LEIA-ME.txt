@@ -1,0 +1,32 @@
+COLOQUE AQUI AS FOTOS DO SITE
+=============================
+
+GALERIA (12 fotos, JPG):
+  foto-01.jpg  Photocards da FreenBecky (destaque grande)
+  foto-02.jpg  Chaveiro capa de livro - GAP
+  foto-03.jpg  Chaveiro capa de livro - The Secret of Us
+  foto-04.jpg  Chaveiro capa de livro - Delilah Green
+  foto-05.jpg  Coleção Velvet Dream
+  foto-06.jpg  Kits MilkLove (destaque grande)
+  foto-07.jpg  Photobooth personalizado
+  foto-08.jpg  Photocards personalizados
+  foto-09.jpg  Chaveiros acrílicos
+  foto-10.jpg  Botões e ímãs
+  foto-11.jpg  Credenciais de fã
+  foto-12.jpg  Pedidos com carinho
+
+PRODUTOS (JPG, proporção 4:3):
+  produto-photocard.jpg
+  produto-polaroid.jpg
+  produto-photobooth.jpg
+  produto-botao.jpg
+  produto-chaveiro.jpg      (chaveiro botão, acrílico, photobooth e capa de livro)
+  produto-ima.jpg
+  produto-caneca.jpg
+  produto-marcapagina.jpg
+  produto-ecobag.jpg
+  produto-credencial.jpg
+  produto-kit.jpg           (kits Lite, Plus, Premium e VIP)
+
+Dica: 1200 px no lado maior e até ~400 KB por imagem.
+Enquanto um arquivo não existir, o site mostra um placeholder com o caminho correto.

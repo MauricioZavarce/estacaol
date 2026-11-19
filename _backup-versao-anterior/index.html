@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estação L — Itens colecionáveis sáficos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Decorative sparkles -->
+  <div class="sparkle" style="width:8px;height:8px;background:var(--rainbow-1);top:15%;left:8%;animation-delay:.5s"></div>
+  <div class="sparkle" style="width:6px;height:6px;background:var(--rainbow-3);top:25%;right:12%;animation-delay:1s"></div>
+  <div class="sparkle" style="width:10px;height:10px;background:var(--rainbow-5);top:60%;left:5%;animation-delay:1.5s"></div>
+  <div class="sparkle" style="width:7px;height:7px;background:var(--rainbow-6);top:75%;right:8%;animation-delay:.8s"></div>
+  <div class="sparkle" style="width:5px;height:5px;background:var(--rainbow-2);top:45%;right:20%;animation-delay:2s"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="reveal">
+    <div class="nav-container">
+      <a href="#" class="logo-link">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="miniRainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#7c3aed"/>
+              <stop offset="20%" style="stop-color:#3b82f6"/>
+              <stop offset="40%" style="stop-color:#22c55e"/>
+              <stop offset="60%" style="stop-color:#eab308"/>
+              <stop offset="80%" style="stop-color:#f97316"/>
+              <stop offset="100%" style="stop-color:#ec4899"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="url(#miniRainbow)" stroke-width="14" class="logo-ring"/>
+          <text x="50" y="62" text-anchor="middle" font-size="36" font-weight="700" fill="var(--text)" font-family="Bricolage Grotesque, sans-serif">L</text>
+        </svg>
+        <span class="logo-text">Estação L</span>
+      </a>
+      <div class="desktop-nav">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#colecao" class="nav-link">Coleção</a>
+        <a href="#info" class="nav-link">Informações</a>
+        <button class="btn-primary" onclick="scrollToSection('colecao')">Ver coleção</button>
+      </div>
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#sobre" class="nav-link" onclick="toggleMenu()">Sobre</a>
+      <a href="#colecao" class="nav-link" onclick="toggleMenu()">Coleção</a>
+      <a href="#info" class="nav-link" onclick="toggleMenu()">Informações</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero reveal">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="float-anim hero-logo">
+        <svg width="140" height="140" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="heroRainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#7c3aed"/>
+              <stop offset="20%" style="stop-color:#3b82f6"/>
+              <stop offset="40%" style="stop-color:#22c55e"/>
+              <stop offset="60%" style="stop-color:#eab308"/>
+              <stop offset="80%" style="stop-color:#f97316"/>
+              <stop offset="100%" style="stop-color:#ec4899"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="url(#heroRainbow)" stroke-width="14"/>
+          <text x="50" y="62" text-anchor="middle" font-size="36" font-weight="700" fill="var(--text)" font-family="Bricolage Grotesque, sans-serif">L</text>
+        </svg>
+      </div>
+      
+      <p class="eyebrow">Itens colecionáveis sáficos</p>
+      
+      <h1 class="hero-title">
+        Bem-vinda à<br><span class="rainbow-text">Estação L</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Itens colecionáveis inspirados no mundo sáfico. Feito com muito carinho, de fã para fã.
+      </p>
+      
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToSection('colecao')">Explorar coleção</button>
+        <button class="btn-secondary" onclick="scrollToSection('sobre')">Conhecer a história</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE SECTION -->
+  <section id="sobre" class="sobre reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Sobre nós</p>
+        <h2 class="section-title">Um espaço feito <span class="rainbow-text">com amor</span></h2>
+      </div>
+      
+      <div class="sobre-grid">
+        <div class="info-card">
+          <div class="info-icon icon-pink">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>De fã para fã</h3>
+          <p>Cada peça é criada por quem entende e ama a cultura sáfica. Nós sabemos exatamente o que você procura.</p>
+        </div>
+        
+        <div class="info-card">
+          <div class="info-icon icon-purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Colecionáveis únicos</h3>
+          <p>Pins, chaveiros, cartões e muito mais. Peças exclusivas para colecionar e presentear quem você ama.</p>
+        </div>
+        
+        <div class="info-card">
+          <div class="info-icon icon-blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2"/>
+              <path d="M16 8h4l3 3v5h-7V8z"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Envio para todo Brasil</h3>
+          <p>De São Paulo para todo o país. Embalagem cuidadosa e envio com rastreio para você acompanhar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLEÇÃO SECTION -->
+  <section id="colecao" class="colecao reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nossa coleção</p>
+        <h2 class="section-title">Peças que <span class="rainbow-text">contam histórias</span></h2>
+        <p class="section-subtitle">Conheça alguns dos nossos itens mais amados pela comunidade</p>
+      </div>
+      
+      <div id="filterTabs" class="filter-tabs">
+        <button class="filter-btn active" data-filter="all" onclick="filterProducts('all',this)">Todos</button>
+        <button class="filter-btn" data-filter="pins" onclick="filterProducts('pins',this)">Pins</button>
+        <button class="filter-btn" data-filter="chaveiros" onclick="filterProducts('chaveiros',this)">Chaveiros</button>
+        <button class="filter-btn" data-filter="stickers" onclick="filterProducts('stickers',this)">Stickers</button>
+      </div>
+      
+      <div id="productsGrid" class="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section id="info" class="info-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Informações</p>
+        <h2 class="section-title">Tudo o que você precisa saber</h2>
+      </div>
+      
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-item-icon icon-green">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Localização</h3>
+          <p>São Paulo, SP — Brasil</p>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-item-icon icon-orange">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2"/>
+              <path d="M16 8h4l3 3v5h-7V8z"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Envio</h3>
+          <p>Para todo o Brasil com código de rastreio</p>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-item-icon icon-pink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Feito com carinho</h3>
+          <p>Embalagem especial em cada pedido</p>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-item-icon icon-purple">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h3>Contato</h3>
+          <p>Siga-nos nas redes para novidades</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta reveal">
+    <div class="cta-box">
+      <div class="rainbow-border"></div>
+      <div class="cta-content">
+        <h2>Comece sua coleção hoje</h2>
+        <p>Faça parte dessa comunidade e leve um pouco mais de amor sáfico para sua vida</p>
+        <button class="btn-primary" onclick="scrollToSection('colecao')">Ver todos os produtos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <svg width="32" height="32" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="footerRainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#7c3aed"/>
+              <stop offset="20%" style="stop-color:#3b82f6"/>
+              <stop offset="40%" style="stop-color:#22c55e"/>
+              <stop offset="60%" style="stop-color:#eab308"/>
+              <stop offset="80%" style="stop-color:#f97316"/>
+              <stop offset="100%" style="stop-color:#ec4899"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="url(#footerRainbow)" stroke-width="14"/>
+          <text x="50" y="62" text-anchor="middle" font-size="36" font-weight="700" fill="var(--text)" font-family="Bricolage Grotesque, sans-serif">L</text>
+        </svg>
+        <span>Estação L</span>
+      </div>
+      <p class="footer-tagline">Itens colecionáveis inspirados no mundo sáfico • De fã para fã</p>
+      <p class="footer-location">São Paulo, SP • Envio para todo o Brasil</p>
+      <div class="footer-bottom">
+        <p>© 2026 Estação L. Feito com <span class="heart">♥</span> para a comunidade.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
